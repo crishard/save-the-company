@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
-
+import img from "../assets/images/home.jpg"
 export const Home = () => {
   return (
     <main>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-12 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-            <img className="object-cover object-center h-full w-full" src="/src/assets/images/home.jpg" alt="" />
+            <img className="object-cover object-center h-full w-full" src={img} alt="" />
           </div>
           <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
             <div className="flex flex-col mb-10 lg:items-start items-center">
@@ -53,7 +53,7 @@ export const Home = () => {
           <div>
             <h1 className="text-gray-900 text-4xl font-bold">Player the game</h1>
             <Link to={"/step/mission1"}>
-            <button className="my-6 px-6 py-4 bg-blue-600 rounded text-white font-semibold text-2xl w-full hover:bg-slate-300 hover:text-gray-700 border-2 hover:border-gray-700">Start</button>
+              <button className="my-6 px-6 py-4 bg-blue-600 rounded text-white font-semibold text-2xl w-full hover:bg-slate-300 hover:text-gray-700 border-2 hover:border-gray-700">Start</button>
             </Link>
           </div>
         </div>
