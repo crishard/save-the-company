@@ -58,7 +58,7 @@ export const Mission1 = () => {
           <h2>Editor de Código</h2>
           <CodeMirror
             value={code}
-            onBeforeChange={(editor, data, value) => {
+            onBeforeChange={(value) => {
               setCode(value);
             }}
             options={{
