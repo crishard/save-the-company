@@ -1,26 +1,7 @@
-import { useState } from 'react';
-import { UnControlled as CodeMirror } from 'react-codemirror2';
 
-import 'codemirror/lib/codemirror.css';
-import 'codemirror/mode/clike/clike';
-import 'codemirror/theme/material.css';
 
 export const Mission1 = () => {
-  const [code, setCode] = useState(`
-  #include <stdio.h>
-  int main() {
-      
-      int idade = "25";  
-      float preço_do_produto;  
-      char nome = "John";  
   
-      int idade_corrigida = 25;
-
-      char nome_corrigido[] = "John";
-  
-      return 0;
-  }
-  `);
 
   return (
     <section>
@@ -54,21 +35,7 @@ export const Mission1 = () => {
       <div>
         <h2>O hacker que invadiu a empresa se utilizou de um erro de códio no código fonte da empresa, o seu dever é detect-alo e corrigi-lo</h2>
 
-        <div>
-          <h2>Editor de Código</h2>
-          <CodeMirror
-            value={code}
-            onBeforeChange={(value) => {
-              setCode(value);
-            }}
-            options={{
-              lineNumbers: true,
-              mode: 'clike',
-              theme: 'material'
-            }}
-          />
-
-        </div>
+        
       </div>
 
     </section>
