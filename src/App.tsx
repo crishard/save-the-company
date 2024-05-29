@@ -1,6 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
 import { Home } from "./components/Home"
-import { Mission1 } from "./components/Mission1"
+import Mission1 from "./components/Mission1"
 import StepByStepMissionOne from "./components/stepByStep/StepByStepMissionOne"
 import "./styles/global.css"
 
