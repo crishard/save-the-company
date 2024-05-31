@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Router>
-      <div className="bg-gray-200  h-svh">
+      <div className="bg-gray-200 h-svh">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/step/mission1" element={<StepByStepMissionOne />} />
