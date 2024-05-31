@@ -14,7 +14,7 @@ if (a > b) {
 } else
     console.log("a não é maior que b");
 `;
-const Mission3 = () => {
+const Mission4 = () => {
     const navigate = useNavigate()
     // function AvaliateCode() {
     //   return true
@@ -23,13 +23,13 @@ const Mission3 = () => {
     const faseTwo = async () => {
         // const user = await AvaliateCode();
         console.log("passou")
-        return navigate("/step/Mission4");;
+        return navigate("/");;
     };
 
     return (
         <section className='px-10 py-16 bg-gray-200'>
             <div className='flex justify-center font-bold text-4xl pb-8'>
-                <h1>Fase 3</h1>
+                <h1>Fase 4</h1>
             </div>
             <p className='text-lg'>Para avançar de fase e continuar salvando a empresa, é hora de corrigir o código vulnerável no código fonte da empresa, identifique os erros de declaração de variável e dê mais um passo rumo a vitória!</p>
             <div className='px-12 flex justify-center'>
@@ -43,4 +43,4 @@ const Mission3 = () => {
     )
 }
 
-export default Mission3
+export default Mission4

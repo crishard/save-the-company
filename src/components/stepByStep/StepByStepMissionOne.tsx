@@ -2,11 +2,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "../../../@/components/ui/button";
+import stepsMissionOne from "../../utils/stepsMissionOne";
 import { CardStepOne } from './CardStepOneComponents/CardStepOne';
 import { CardStepThree } from './CardStepThreeComponents/CardStepThree';
-
+import { CardStepTwo } from './CardSteptwoComponents/CardStepTwo';
 const steps = [
-  <CardStepOne title={'Primeiro Passo: Declaração de Variáveis'} textSubtitlePage={'CHEGOU A HORA DO SHOW'} text1={'Utilizar nomes que reflitam o propósito da variável facilita a leitura e a compreensão do código por outras pessoas, além de ajudar na manutenção futura.'} text2={'Declarar variáveis no escopo adequado: Variáveis locais são acessíveis apenas dentro do bloco de código onde foram definidas, enquanto variáveis globais podem ser acessadas por qualquer parte do programa.'} text3={'Declarar o tipo de dado adequado para a variável (inteiro, string, booleano, etc.) é importante para garantir que as operações realizadas com a variável sejam válidas e para aproveitar melhor os recursos de memória.'} exemplo1={'Exemplo: idade é mais claro que "i"'} exemplo2={''} exemplo3={''} subtitle1={'Escolha de nomes significativos:'} subtitle2={'Definição do escopo'} subtitle3={'Inicialização e tipo de dados:'} />,
+  <CardStepOne title={stepsMissionOne.title} textSubtitlePage={stepsMissionOne.textSubtitlePage} text1={stepsMissionOne.text1} text2={stepsMissionOne.text2} text3={stepsMissionOne.text3} exemplo1={stepsMissionOne.exemplo1} exemplo2={''} exemplo3={''} subtitle1={stepsMissionOne.subtitle1} subtitle2={stepsMissionOne.subtitle2} subtitle3={stepsMissionOne.subtitle3} />,
+  <CardStepTwo title={stepsMissionOne.titleCard2} text={stepsMissionOne.textCard2} code={stepsMissionOne.codigo} saida={stepsMissionOne.saida} />,
   <CardStepThree />,
 ];
 
