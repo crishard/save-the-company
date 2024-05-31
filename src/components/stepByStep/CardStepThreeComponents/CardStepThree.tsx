@@ -1,4 +1,4 @@
-import AllInformationThree from "./CardStepThreeComponents/AllInformationThree"
+import AllInformationThree from "./AllInformationThree"
 
 export const CardStepThree = () => {
   return (

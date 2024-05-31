@@ -1,5 +1,5 @@
-import AllInformation from "./CardStepOneComponents/AllInformation"
-import Title from "./CardStepOneComponents/Title"
+import AllInformation from "./AllInformation"
+import Title from "./Title"
 
 interface ICardStepOneProps {
     title: string,

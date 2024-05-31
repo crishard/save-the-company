@@ -24,7 +24,7 @@ const Mission2 = () => {
     const faseTwo = async () => {
         // const user = await AvaliateCode();
         console.log("passou")
-        return navigate("/step/Mission2");;
+        return navigate("/step/Mission3");;
     };
 
     return (

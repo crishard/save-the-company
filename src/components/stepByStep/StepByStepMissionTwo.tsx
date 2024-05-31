@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "../../../@/components/ui/button";
-import { CardStepOne } from './CardStepOne';
-import { CardStepThree } from './CardStepThree';
-import { CardStepTwo } from './CardStepTwo';
+import { CardStepOne } from './CardStepOneComponents/CardStepOne';
+import { CardStepThree } from './CardStepThreeComponents/CardStepThree';
+import { CardStepTwo } from './CardSteptwoComponents/CardStepTwo';
 const steps = [
     <CardStepOne title={'Operadores Lógicos 1: if & else'} textSubtitlePage={'HORA DE DAR SEGUIMENTO'} text1={'O uso dos operadores if e else permite que você controle o fluxo de execução do seu programa. O if avalia uma condição booleana (True ou False). Se a condição for True, o bloco de código indentado abaixo dele será executado. Caso contrário, o programa saltará para o bloco de código abaixo do else'} text2={'Você pode aninhar várias instruções if e else para lidar com múltiplas condições e cenários complexos usando elif (abreviação de "else if") Isso permite verificar diversas condições em sequência, onde cada elif é avaliado somente se todas as condições anteriores forem False.'} text3={'A utilização correta de if e else é crucial para implementar a lógica de negócios de um programa, desde simples verificações até decisões complexas. Isso torna esses operadores fundamentais em quase todas as linguagens de programação'} exemplo1={''} exemplo2={''} exemplo3={''} subtitle1={'Estrutura de Decisão Condicional'} subtitle2={'Blocos Aninhados e Múltiplas Condições'} subtitle3={'Importância na Lógica de Programação'} />,
 
