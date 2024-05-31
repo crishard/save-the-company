@@ -17,7 +17,7 @@ interface ICardStepOneProps {
 export const CardStepOne = ({ title, textSubtitlePage, text1, text2, text3, exemplo1, exemplo2, exemplo3, subtitle1, subtitle2, subtitle3 }: ICardStepOneProps) => {
     return (
         <section className="text-gray-600 body-font" >
-            <div className="container px-5 pt-24 pb-16 mx-auto">
+            <div className="container px-5 pt-16 pb-16 mx-auto">
                 <Title textTitle={title} textSubtitle={textSubtitlePage} />
                 <div className="flex flex-wrap -m-4">
                     <AllInformation text={text1} subtitle={subtitle1} exemplo={exemplo1} />
