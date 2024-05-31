@@ -8,7 +8,7 @@ interface ICardStepTwoProps {
   code: string,
 }
 
-export const CardStepTwo = ({ }: ICardStepTwoProps) => {
+export const CardStepTwo = ({ title, text, code }: ICardStepTwoProps) => {
 
   const javascriptCode = `// Definindo duas variáveis
   var a = 10;
