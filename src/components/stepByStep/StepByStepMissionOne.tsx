@@ -1,15 +1,11 @@
-// src/StepByStepCards.js
+
 import { useState } from 'react';
 import { Button } from "../../../@/components/ui/button";
 import { CardStepOne } from './CardStepOne';
 import { CardStepThree } from './CardStepThree';
-import { CardStepTwo } from './CardStepTwo';
-// Array de componentes dos passos
 const steps = [
   <CardStepOne />,
-  <CardStepTwo />,
   <CardStepThree />,
-  // Adicione mais componentes de passos conforme necessário
 ];
 
 const StepByStepMissionOne = () => {
