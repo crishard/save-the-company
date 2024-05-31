@@ -1,7 +1,9 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
-import { Home } from "./components/Home"
-import Mission1 from "./components/Mission1"
 import StepByStepMissionOne from "./components/stepByStep/StepByStepMissionOne"
+import StepByStepMissionTwo from "./components/stepByStep/StepByStepMissionTwo"
+import { Home } from "./pages/Home"
+import Mission1 from "./pages/Mission1"
+import Mission2 from "./pages/Mission2"
 import "./styles/global.css"
 
 
@@ -14,6 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/step/mission1" element={<StepByStepMissionOne />} />
           <Route path="/fase1" element={<Mission1 />} />
+          <Route path="/step/mission2" element={<StepByStepMissionTwo />} />
+          <Route path="/fase2" element={<Mission2 />} />
         </Routes>
       </div>
     </Router>
