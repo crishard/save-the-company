@@ -32,7 +32,6 @@ function Mission1() {
       return navigate("/step/Mission2");
     } else {
       toast.error('Código incorreto. Corrija as variáveis.');
-      console.log("Código incorreto. Corrija as variáveis.");
     }
   };
 

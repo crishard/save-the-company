@@ -4,15 +4,13 @@ import CodeMirror from '@uiw/react-codemirror';
 import { useNavigate } from "react-router-dom";
 import { Button } from '../../@/components/ui/button';
 
-const javascriptCode = `// Definindo duas variáveis
-var a = 10;
-var b = 20;
+const javascriptCode = `// Definindo um array
+var array = [1, 2, 3, 4, 5];
 
-// Verificando qual variável é maior com erro de sintaxe
-if (a > b) {
-    console.log("a é maior que b")
-} else
-    console.log("a não é maior que b");
+// Usando um loop for 
+for (var i = 0; i <= array.length; i++) {
+    console.log(array[i]);
+}
 `;
 const Mission3 = () => {
     const navigate = useNavigate()
