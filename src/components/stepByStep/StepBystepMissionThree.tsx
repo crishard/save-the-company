@@ -15,7 +15,7 @@ const steps = [
         console.log(array[i]);
     }
     
-    `} saida={'ppaaoiehei'} />,
+    `} saida={'ppaaoiehei'} text2={''} text3={''} />,
     <CardStepThree />,
 ];
 const StepBystepMissionThree = () => {
