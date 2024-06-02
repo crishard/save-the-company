@@ -11,8 +11,11 @@ const stepsMissionOne = {
     subtitle1: 'Escolha de nomes significativos:', subtitle2: 'Definição do escopo', subtitle3: 'Inicialização e tipo de dados:',
 
     // card 2
-    titleCard2: 'Exemplo do uso em uma implementação real:',
-    textCard2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt aliquam deserunt dolore, a beatae atque necessitatibus ipsam numquam natus nostrum quae, blanditiis dignissimos dolorem!',
+    titleCard2: 'Você pode declarar uma variável de três formas:',
+    textCard2: 'Com a palavra chave var. Por exemplo, var x = 42. Esta sintaxe pode ser usada para declarar tanto variáveis locais como variáveis globais. ',
+    text2Card2: 'Com a palavra chave let. Por exemplo, let y = 13. Essa sintaxe pode ser usada para declarar uma variável local de escopo de bloco.',
+    text3Card2: 'Você não pode declarar uma constante com o mesmo nome de uma função ou variável que estão no mesmo escopo',
+
     codigo: `// Definindo duas variáveis
     var a = 180;
     var b = 80;
