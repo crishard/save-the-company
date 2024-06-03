@@ -16,8 +16,8 @@ const steps = [
         console.log(array[i]);
     }
     
-    `} saida={'ppaaoiehei'} text2={''} text3={''} />,
-    <CardStepThree />,
+    `} saida={'ppaaoiehei'} text2={''} text3={''} popover1Text={''} popover2Text={''} popover3Text={''} />,
+    <CardStepThree textLeft={''} textRight={''} titleLeft={''} titleRight={''} />,
 ];
 const StepByStepMissionFour = () => {
     const [currentStep, setCurrentStep] = useState(0);

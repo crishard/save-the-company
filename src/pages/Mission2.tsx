@@ -26,9 +26,7 @@ const Mission2 = () => {
     };
 
     const AvaliateCode = (code: any) => {
-        // Verifica se as variáveis são declaradas corretamente como const e possuem os nomes corretos
         const correctVarDeclaration = /const\s+valor1\s*=\s*\d+;\s*const\s+valor2\s*=\s*\d+;/;
-        // Verifica se a estrutura do if-else está correta e utiliza as variáveis corretas
         const correctIfElseStructure = /if\s*\(valor1\s*>\s*valor2\)\s*\{\s*console\.log\("valor1 é maior que valor2"\);\s*\}\s*else\s*\{\s*console\.log\("valor1 não é maior que valor2"\);\s*\}/;
     
         return correctVarDeclaration.test(code) && correctIfElseStructure.test(code);
@@ -38,11 +36,9 @@ const Mission2 = () => {
         const isValid = AvaliateCode(code);
         if (isValid) {
             toast.success('Código correto! Avançando para a próxima fase.');
-            console.log("passou");
             return navigate("/step/Mission3");
         } else {
             toast.error('Código incorreto. Corrija as variáveis e a estrutura do if-else.');
-            console.log("Código incorreto. Corrija as variáveis e a estrutura do if-else.");
         }
     };
 

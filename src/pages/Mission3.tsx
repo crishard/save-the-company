@@ -24,9 +24,7 @@ const Mission3 = () => {
   };
 
   const AvaliateCode = (code: any) => {
-    // Verifica se o array é declarado corretamente com const
     const correctArrayDeclaration = /const\s+array\s*=\s*\[.+\];/;
-    // Verifica se a estrutura do loop for está correta
     const correctForLoopStructure = /for\s*\(let\s+i\s*=\s*0;\s*i\s*<\s*array.length;\s*i\+\+\)\s*\{\s*console\.log\(array\[i\]\);\s*\}/;
 
     return correctArrayDeclaration.test(code) && correctForLoopStructure.test(code);
@@ -36,11 +34,9 @@ const Mission3 = () => {
     const isValid = AvaliateCode(code);
     if (isValid) {
       toast.success('Código correto! Avançando para a próxima fase.');
-      console.log("passou");
       return navigate("/step/Mission4");
     } else {
       toast.error('Código incorreto. Corrija a declaração do array e a estrutura do loop for.');
-      console.log("Código incorreto. Corrija a declaração do array e a estrutura do loop for.");
     }
   };
 

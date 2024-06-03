@@ -21,14 +21,12 @@ const Mission4 = () => {
   const navigate = useNavigate();
   const [code, setCode] = useState(initialJavascriptCode);
 
-  const handleCodeChange = (value:any) => {
+  const handleCodeChange = (value: any) => {
     setCode(value);
   };
 
   const AvaliateCode = (code: any) => {
-    // Verifica se o array é declarado corretamente com const
     const correctArrayDeclaration = /const\s+array\s*=\s*\[.+\];/;
-    // Verifica se a estrutura do loop while está correta
     const correctWhileLoopStructure = /let\s+i\s*=\s*0;\s*while\s*\(i\s*<\s*array.length\)\s*\{\s*console\.log\(array\[i\]\);\s*i\+\+\s*;\s*\}/;
 
     return correctArrayDeclaration.test(code) && correctWhileLoopStructure.test(code);
@@ -38,11 +36,9 @@ const Mission4 = () => {
     const isValid = AvaliateCode(code);
     if (isValid) {
       toast.success('Código correto! Avançando para a próxima fase.');
-      console.log("passou");
       return navigate("/");
     } else {
       toast.error('Código incorreto. Corrija a declaração do array e a estrutura do loop while.');
-      console.log("Código incorreto. Corrija a declaração do array e a estrutura do loop while.");
     }
   };
 

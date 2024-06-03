@@ -28,7 +28,6 @@ function Mission1() {
     const isValid = AvaliateCode(code);
     if (isValid) {
       toast.success('Código correto! Avançando para a próxima fase.');
-      console.log("passou");
       return navigate("/step/Mission2");
     } else {
       toast.error('Código incorreto. Corrija as variáveis.');
@@ -42,6 +41,8 @@ function Mission1() {
         <h1>Fase 1</h1>
       </div>
       <p className='text-lg'>Para avançar de fase e continuar salvando a empresa, é hora de corrigir o código vulnerável no código fonte da empresa, identifique os erros de declaração de variável e dê mais um passo rumo a vitória!</p>
+
+      <p className='pt-4 text-green-600'>Dica: leia o console.log do código para melhorara a compreensão quanto as variáveis</p>
       <div className='px-12 flex justify-center'>
         <CodeMirror
           className='w-full px-32 py-14'

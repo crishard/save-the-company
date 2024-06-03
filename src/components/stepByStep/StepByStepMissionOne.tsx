@@ -8,8 +8,8 @@ import { CardStepThree } from './CardStepThreeComponents/CardStepThree';
 import { CardStepTwo } from './CardSteptwoComponents/CardStepTwo';
 const steps = [
   <CardStepOne title={stepsMissionOne.title} textSubtitlePage={stepsMissionOne.textSubtitlePage} text1={stepsMissionOne.text1} text2={stepsMissionOne.text2} text3={stepsMissionOne.text3} exemplo1={stepsMissionOne.exemplo1} exemplo2={''} exemplo3={''} subtitle1={stepsMissionOne.subtitle1} subtitle2={stepsMissionOne.subtitle2} subtitle3={stepsMissionOne.subtitle3} />,
-  <CardStepTwo title={stepsMissionOne.titleCard2} text={stepsMissionOne.textCard2} code={stepsMissionOne.codigo} saida={stepsMissionOne.saida} text2={stepsMissionOne.text2Card2} text3={stepsMissionOne.text3Card2} />,
-  <CardStepThree />,
+  <CardStepTwo title={stepsMissionOne.titleCard2} text={stepsMissionOne.textCard2} code={stepsMissionOne.codigo} saida={stepsMissionOne.saida} text2={stepsMissionOne.text2Card2} text3={stepsMissionOne.text3Card2} popover1Text={stepsMissionOne.popover1Text} popover2Text={stepsMissionOne.popover2Text} popover3Text={stepsMissionOne.popover3Text} />,
+  <CardStepThree textLeft={stepsMissionOne.textCardThree2} textRight={stepsMissionOne.textCardThree1} titleLeft={stepsMissionOne.title1} titleRight={stepsMissionOne.title2} />,
 ];
 
 const StepByStepMissionOne = () => {
@@ -44,7 +44,7 @@ const StepByStepMissionOne = () => {
         )}
       </div>
       <div>
-        {currentStep >= steps.length -1  && <Link to='/fase1'>
+        {currentStep >= steps.length - 1 && <Link to='/fase1'>
           <Button className="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Ir para 1° Fase</Button>
         </Link>}
       </div>

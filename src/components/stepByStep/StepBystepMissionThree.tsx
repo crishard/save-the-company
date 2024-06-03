@@ -15,8 +15,8 @@ const steps = [
         console.log(array[i]);
     }
     
-    `} saida={'ppaaoiehei'} text2={''} text3={''} />,
-    <CardStepThree />,
+    `} saida={'ppaaoiehei'} text2={''} text3={''} popover1Text={''} popover2Text={''} popover3Text={''} />,
+    <CardStepThree textLeft={''} textRight={''} titleLeft={''} titleRight={''} />,
 ];
 const StepBystepMissionThree = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -37,6 +37,7 @@ const StepBystepMissionThree = () => {
       <div>
           <div className="card">
               {steps[currentStep]}
+              
           </div>
           <div className='flex justify-around'>
               {currentStep > 0 && <Button className='bg-gray-600 text-gray-200 px-3 py-2 rounded-lg hover:bg-gray-400 hover:text-gray-700 transition ease-linear shadow-xl' variant="secondary" onClick={previousStep} disabled={currentStep === 0}>

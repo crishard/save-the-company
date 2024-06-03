@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@codemirror/legacy-modes": "^6.4.0",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-popover": "^1.0.7",
     "@radix-ui/react-slot": "^1.0.2",
     "@uiw/react-codemirror": "^4.22.1",
     "class-variance-authority": "^0.7.0",

@@ -23,7 +23,7 @@ export const Home = () => {
             </div>
             <div className="flex flex-col mb-10 lg:items-start items-center">
               <FaGrinWink className="text-indigo-500 text-4xl mb-2" />
-              <SectionInfo title={"Hore de começar"} text={"Conforme você avança no jogo, descobrirá segredos sombrios sobre a origem dos erros de código e os interesses ocultos por trás da crise da SiliconTech. Está preparado para enfrentar os desafios e salvar a empresa?"} />
+              <SectionInfo title={"Hora de começar"} text={"Conforme você avança no jogo, descobrirá segredos sombrios sobre a origem dos erros de código e os interesses ocultos por trás da crise da SiliconTech. Está preparado para enfrentar os desafios e salvar a empresa?"} />
             </div>
           </div>
         </div>
