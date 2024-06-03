@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 import { Button } from '../../@/components/ui/button';
 
 const initialJavascriptCode = `// Definindo duas variáveis
-var valor1 = 10;
-var valor2 = 20;
+const valor1 = 10;
+const valor2 = 20;
 
 // Verificando qual variável é maior com erro de sintaxe
 if (valor1 > valor2) {
@@ -28,9 +28,9 @@ const Mission2 = () => {
     const AvaliateCode = (code: any) => {
         const correctVarDeclaration = /const\s+valor1\s*=\s*\d+;\s*const\s+valor2\s*=\s*\d+;/;
         const correctIfElseStructure = /if\s*\(valor1\s*>\s*valor2\)\s*\{\s*console\.log\("valor1 é maior que valor2"\);\s*\}\s*else\s*\{\s*console\.log\("valor1 não é maior que valor2"\);\s*\}/;
-    
+
         return correctVarDeclaration.test(code) && correctIfElseStructure.test(code);
-      };
+    };
 
     const faseTwo = async () => {
         const isValid = AvaliateCode(code);
@@ -38,7 +38,7 @@ const Mission2 = () => {
             toast.success('Código correto! Avançando para a próxima fase.');
             return navigate("/step/Mission3");
         } else {
-            toast.error('Código incorreto. Corrija as variáveis e a estrutura do if-else.');
+            toast.error('Código incorreto. Corrija a estrutura do if-else.');
         }
     };
 

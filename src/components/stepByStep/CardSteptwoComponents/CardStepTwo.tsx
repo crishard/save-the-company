@@ -25,7 +25,7 @@ export const CardStepTwo = ({ title, text, code, saida, text2, text3, popover1Te
 
   const javascriptCode = code;
   return (
-    <div className='px-12 py-8'>
+    <div className='px-12 py-6'>
       <div className='flex justify-center py-3'>
 
         <h1 className='text-bold text-4xl'>{title}</h1>

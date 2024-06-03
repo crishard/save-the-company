@@ -12,23 +12,30 @@ const stepsMissionTwo = {
 
     // card 2
     titleCard2: 'Exemplo do uso em uma implementação real:',
-    textCard2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt aliquam deserunt dolore, a beatae atque necessitatibus ipsam numquam natus nostrum quae, blanditiis dignissimos dolorem!',
-    text2Card2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt aliquam deserunt dolore, a beatae atque necessitatibus ipsam numquam natus nostrum quae, blanditiis dignissimos dolorem!',
-    text3Card2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt aliquam deserunt dolore, a beatae atque necessitatibus ipsam numquam natus nostrum quae, blanditiis dignissimos dolorem!',
+    textCard2: 'Estrutura Básica de Condicional if-else:',
+    text2Card2: 'Comparação entre Variáveis:',
+    text3Card2: 'Fluxo de Controle:',
     codigo: `// Definindo duas variáveis
     var valor1 = 10;
     var valor2 = 20;
     
     // Verificando qual variável é maior
-    if (a > b) {
-        console.log("a é maior que b");
+    if (valor1 > valor2) {
+        console.log("o valor1 é maior que o valor2");
     } else {
-        console.log("a não é maior que b");
+        console.log("o valor1 não é maior que o valor2");
     }
     `,
-    saida: 'ppaaoiehei',
-    popover1Text: "",
-    popover2Text: "",
-    popover3Text: ""
+    saida: 'o valor1 não é maior que o valor2',
+    popover1Text: "O código utiliza a estrutura if-else para tomar decisões com base em uma condição: se verdadeiro é executado somente o bloco if, se falso é executado o bloco else",
+    popover2Text: 'O código compara as variáveis a e b usando o operador de comparação: maior que ">". ',
+    popover3Text: 'A estrutura if-else altera o fluxo de execução do programa com base na condição : "valor1>valor2"',
+
+
+    // card 3
+    textLeft: "Excesso de Condicionais Aninhadas, Condições Redundantes ou Desnecessárias, Complexidade Ciclomática Alta(com muitos if-else), Comparações Inadequadas, Ausência de Else Quando Necessário",
+    textRight: "Simplifique as condições e remova redundâncias, Divida a lógica em funções menores ou use padrões de design para gerenciar a complexidade, Use comparações estritas (=== e !==) para maior precisão, Certifique-se de cobrir todos os casos possíveis, especialmente quando há múltiplas condições, Certifique-se de cobrir todos os casos possíveis, especialmente quando há múltiplas condições.",
+    titleLeft: "O que evitar",
+    titleRight: "Como corrigir possíveis erros"
 }
 export default stepsMissionTwo

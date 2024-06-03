@@ -8,7 +8,7 @@ import { CardStepTwo } from './CardSteptwoComponents/CardStepTwo';
 const steps = [
     <CardStepOne title={stepsMissionTwo.title} textSubtitlePage={stepsMissionTwo.textSubtitlePage} text1={stepsMissionTwo.text1} text2={stepsMissionTwo.text2} text3={stepsMissionTwo.text3} exemplo1={''} exemplo2={''} exemplo3={''} subtitle1={stepsMissionTwo.subtitle1} subtitle2={stepsMissionTwo.subtitle2} subtitle3={stepsMissionTwo.subtitle3} />,
     <CardStepTwo title={stepsMissionTwo.titleCard2} text={stepsMissionTwo.textCard2} code={stepsMissionTwo.codigo} saida={stepsMissionTwo.saida} text2={stepsMissionTwo.text2Card2} text3={stepsMissionTwo.text3Card2} popover1Text={stepsMissionTwo.popover1Text} popover2Text={stepsMissionTwo.popover2Text} popover3Text={stepsMissionTwo.popover3Text} />,
-    <CardStepThree textLeft={''} textRight={''} titleLeft={''} titleRight={''} />,
+    <CardStepThree textLeft={stepsMissionTwo.textLeft} textRight={stepsMissionTwo.textRight} titleLeft={stepsMissionTwo.titleLeft} titleRight={stepsMissionTwo.titleRight} />,
 ];
 
 const StepByStepMissionTwo = () => {
