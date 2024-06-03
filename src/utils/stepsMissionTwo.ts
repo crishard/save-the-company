@@ -13,9 +13,11 @@ const stepsMissionTwo = {
     // card 2
     titleCard2: 'Exemplo do uso em uma implementação real:',
     textCard2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt aliquam deserunt dolore, a beatae atque necessitatibus ipsam numquam natus nostrum quae, blanditiis dignissimos dolorem!',
+    text2Card2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt aliquam deserunt dolore, a beatae atque necessitatibus ipsam numquam natus nostrum quae, blanditiis dignissimos dolorem!',
+    text3Card2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt aliquam deserunt dolore, a beatae atque necessitatibus ipsam numquam natus nostrum quae, blanditiis dignissimos dolorem!',
     codigo: `// Definindo duas variáveis
-    var a = 10;
-    var b = 20;
+    var valor1 = 10;
+    var valor2 = 20;
     
     // Verificando qual variável é maior
     if (a > b) {
@@ -24,6 +26,9 @@ const stepsMissionTwo = {
         console.log("a não é maior que b");
     }
     `,
-    saida: 'ppaaoiehei'
+    saida: 'ppaaoiehei',
+    popover1Text: "",
+    popover2Text: "",
+    popover3Text: ""
 }
 export default stepsMissionTwo
