@@ -7,8 +7,8 @@ import { Toaster, toast } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
 import { Button } from '../../@/components/ui/button';
 
-const initialJavascriptCode = `const a = 12
-let b = "Juarez"
+const initialJavascriptCode = `var a = 12
+var b = "Juarez"
 console.log("{b} tem 12 anos de {a}")`;
 
 function Mission1() {
@@ -20,8 +20,8 @@ function Mission1() {
   };
 
   const AvaliateCode = (code: any) => {
-    const correctIdade = /const\s+idade\s*=\s*\d+/;
-    const correctNome = /let\s+nome\s*=\s*".+"/;
+    const correctIdade = /var\s+idade\s*=\s*\d+/;
+    const correctNome = /var\s+nome\s*=\s*".+"/;
     return correctIdade.test(code) && correctNome.test(code);
   };
 
