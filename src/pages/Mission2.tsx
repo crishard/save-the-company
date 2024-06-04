@@ -56,7 +56,7 @@ const Mission2 = () => {
                 <div className='flex justify-center font-bold text-4xl pb-8'>
                     <h1>Fase 2</h1>
                 </div>
-                <p className='text-lg'>Para avançar de fase e continuar salvando a empresa, é hora de corrigir o código vulnerável no código fonte da empresa, identifique os erros de declaração de variável e dê mais um passo rumo a vitória!</p>
+                <p className='text-lg'>Para avançar para a próxima fase, você precisa agora utilizar tudo o que aprendeu sobre o laço de repetição if e else e identificar os erros no código fonte. Assim que identificá-los, corrija-os e fique ainda mais próximo de salvar a SiliconTech Inc.</p>
                 <p className='pt-4 text-green-600'>Dica: as variáveis já foram bem declaradas, foque na estrutura do if e else</p>
             </Fade>
             <div className='px-12 flex justify-center'>

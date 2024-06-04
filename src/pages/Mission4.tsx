@@ -39,7 +39,7 @@ const Mission4 = () => {
     setTimeout(() => {
       toast.dismiss(loadingToastId);
       if (isValid) {
-        toast.success('Código correto! Avançando para a próxima fase.');
+        toast.success('Código correto! Você venceu!');
         setTimeout(() => {
           navigate("/win");
         }, 2000);
@@ -56,8 +56,8 @@ const Mission4 = () => {
         <div className='flex justify-center font-bold text-4xl pb-8'>
           <h1>Fase 4</h1>
         </div>
-        <p className='text-lg'>Para avançar de fase e continuar salvando a empresa, é hora de corrigir o código vulnerável no código fonte da empresa, identifique os erros de declaração de variável e dê mais um passo rumo a vitória!</p>
-        <p className='pt-4 text-green-600'>Dica: analise a estrutura do laço de repetição e a declaração das variáveis</p>
+        <p className='text-lg'>Para garantir a vitória e salvar a empresa, é hora de utilizar o que aprendeu sobre  sobre o laço de repetição while e identificar os erros no código fonte. Assim que identificá-los, corrija-os e fique ainda mais próximo de salvar a SiliconTech Inc.</p>
+        <p className='pt-4 text-green-600'>Dica: verifique se todas as partes do while estão completas (condição e incremento)</p>
       </Fade>
       <div className='px-12 flex justify-center'>
         <Slide triggerOnce duration={1000}>
