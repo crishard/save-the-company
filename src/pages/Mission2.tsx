@@ -41,7 +41,7 @@ const Mission2 = () => {
             if (isValid) {
                 toast.success('Código correto! Avançando para a próxima fase.');
                 setTimeout(() => {
-                    navigate("/step/Mission3");
+                    navigate("/step/mission3");
                 }, 2000);
             } else {
                 toast.error('Código incorreto. Corrija a estrutura do if-else.');

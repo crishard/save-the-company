@@ -39,7 +39,7 @@ const Mission3 = () => {
       if (isValid) {
         toast.success('Código correto! Avançando para a próxima fase.');
         setTimeout(() => {
-          navigate("/step/Mission4");
+          navigate("/step/mission4");
         }, 2000);
       } else {
         toast.error('Código incorreto. Corrija a declaração do array e a estrutura do loop for.');

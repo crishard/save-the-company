@@ -33,7 +33,7 @@ function Mission1() {
       if (isValid) {
         toast.success('Código correto! Avançando para a próxima fase.');
         setTimeout(() => {
-          navigate("/step/Mission2");
+          navigate("/step/mission2");
         }, 2000);
       } else {
         toast.error('Código incorreto. Corrija as variáveis.');
