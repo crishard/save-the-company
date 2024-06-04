@@ -5,8 +5,8 @@ const stepsMissionThree = {
     title: 'Operadores Lógicos 2: for',
     textSubtitlePage: 'HORA DE DAR SEGUIMENTO',
     text1: 'O operador for é usado para criar loops, permitindo a repetição de um bloco de código um número específico de vezes. A estrutura básica de um loop for em JavaScript contém: Inicialização, Condição e Incremento',
-    text2: 'O loop for é frequentemente usado para iterar sobre elementos de arrays ou outras estruturas de dados iteráveis. Isso permite acessar e manipular cada elemento individualmente.',
-    text3: 'O loop for oferece um controle preciso sobre a execução do loop, permitindo que você ajuste a inicialização, condição e incremento conforme necessário. Isso torna o for muito flexível para uma variedade de situações, como loops com passos variáveis, decrementos, ou iterações complexas.',
+    text2: 'O loop for é frequentemente usado para iterar sobre elementos de arrays ou outras estruturas de dados iteráveis. Isso permite acessar e manipular cada elemento individualmente. Ex: arrays, arquivos de texto, json e outros.',
+    text3: 'O loop for oferece um controle preciso sobre a execução do loop, permitindo que você ajuste a inicialização, condição e incremento conforme necessário. Isso torna o for muito flexível para uma variedade de situações.',
     exemplo1: 'Exemplo: idade é mais claro que "i"', exemplo2: '', exemplo3: '',
     subtitle1: 'Estrutura de Repetição', subtitle2: 'Iteração sobre Estruturas de Dados', subtitle3: 'Flexibilidade e Controle',
 
