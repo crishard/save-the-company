@@ -7,10 +7,10 @@ import { useNavigate } from "react-router-dom";
 import { Button } from '../../@/components/ui/button';
 
 const initialJavascriptCode = `// Definindo um array
-var array = [1, 2, 3, 4, 5];
+const array = [1, 2, 3, 4, 5];
 
 // Usando um loop for com um erro na estrutura
-for var i = 0; i < array.length; i++ {
+for let i = 0; i < array.length; i++ {
     console.log(array[i]);
 }
 `;
@@ -24,20 +24,26 @@ const Mission3 = () => {
   };
 
   const AvaliateCode = (code: any) => {
-    const correctArrayDeclaration = /const\s+array\s*=\s*\[.+\];/;
     const correctForLoopStructure = /for\s*\(let\s+i\s*=\s*0;\s*i\s*<\s*array.length;\s*i\+\+\)\s*\{\s*console\.log\(array\[i\]\);\s*\}/;
 
-    return correctArrayDeclaration.test(code) && correctForLoopStructure.test(code);
+    return correctForLoopStructure.test(code);
   };
 
   const faseTwo = async () => {
+
+    const loadingToastId = toast.loading("Validando alterações");
     const isValid = AvaliateCode(code);
-    if (isValid) {
-      toast.success('Código correto! Avançando para a próxima fase.');
-      return navigate("/step/Mission4");
-    } else {
-      toast.error('Código incorreto. Corrija a declaração do array e a estrutura do loop for.');
-    }
+    setTimeout(() => {
+      toast.dismiss(loadingToastId);
+      if (isValid) {
+        toast.success('Código correto! Avançando para a próxima fase.');
+        setTimeout(() => {
+          navigate("/step/Mission4");
+        }, 2000);
+      } else {
+        toast.error('Código incorreto. Corrija a declaração do array e a estrutura do loop for.');
+      }
+    }, 2000)
   };
 
   return (
@@ -46,7 +52,8 @@ const Mission3 = () => {
       <div className='flex justify-center font-bold text-4xl pb-8'>
         <h1>Fase 3</h1>
       </div>
-      <p className='text-lg'>Para avançar de fase e continuar salvando a empresa, é hora de corrigir o código vulnerável no código fonte da empresa, identifique os erros de declaração de variável e dê mais um passo rumo a vitória!</p>
+      <p className='text-lg'>Para avançar para a próxima fase, você precisa agora utilizar tudo o que aprendeu sobre o laço de repetição for e identificar os erros no código fonte. Assim que identificá-los, corrija-os e fique ainda mais próximo de salvar a SiliconTech Inc.</p>
+      <p className='pt-4 text-green-600'>Dica: analise a estrutura do laço de repetição e a declaração das variáveis</p>
       <div className='px-12 flex justify-center'>
         <CodeMirror
           className='w-full px-32 py-14'

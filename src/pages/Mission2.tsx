@@ -33,13 +33,19 @@ const Mission2 = () => {
     };
 
     const faseTwo = async () => {
+        const loadingToastId = toast.loading("Validando alterações");
         const isValid = AvaliateCode(code);
-        if (isValid) {
-            toast.success('Código correto! Avançando para a próxima fase.');
-            return navigate("/step/Mission3");
-        } else {
-            toast.error('Código incorreto. Corrija a estrutura do if-else.');
-        }
+        setTimeout(() => {
+            toast.dismiss(loadingToastId);
+            if (isValid) {
+                toast.success('Código correto! Avançando para a próxima fase.');
+                setTimeout(() => {
+                    navigate("/step/Mission4");
+                  }, 2000);
+            } else {
+                toast.error('Código incorreto. Corrija a estrutura do if-else.');
+            }
+        }, 2000)
     };
 
     return (
@@ -49,6 +55,7 @@ const Mission2 = () => {
                 <h1>Fase 2</h1>
             </div>
             <p className='text-lg'>Para avançar de fase e continuar salvando a empresa, é hora de corrigir o código vulnerável no código fonte da empresa, identifique os erros de declaração de variável e dê mais um passo rumo a vitória!</p>
+            <p className='pt-4 text-green-600'>Dica: as variáveis já foram bem declaradas, foque na estrutura do if e else</p>
             <div className='px-12 flex justify-center'>
                 <CodeMirror
                     className='w-full px-32 py-14'

@@ -8,7 +8,7 @@ const stepsMissionThree = {
     text2: 'O loop for é frequentemente usado para iterar sobre elementos de arrays ou outras estruturas de dados iteráveis. Isso permite acessar e manipular cada elemento individualmente.',
     text3: 'O loop for oferece um controle preciso sobre a execução do loop, permitindo que você ajuste a inicialização, condição e incremento conforme necessário. Isso torna o for muito flexível para uma variedade de situações, como loops com passos variáveis, decrementos, ou iterações complexas.',
     exemplo1: 'Exemplo: idade é mais claro que "i"', exemplo2: '', exemplo3: '',
-    subtitle1: 'Escolha de nomes significativos:', subtitle2: 'Definição do escopo', subtitle3: 'Inicialização e tipo de dados:',
+    subtitle1: 'Estrutura de Repetição', subtitle2: 'Iteração sobre Estruturas de Dados', subtitle3: 'Flexibilidade e Controle',
 
     // card 2
     titleCard2: 'Exemplo do uso em uma implementação real:',
@@ -23,9 +23,16 @@ const stepsMissionThree = {
         console.log(array[i]);
     }  
     `,
-    saida: '24.69',
+    saida: '1 2 3 4 5',
     popover1Text: "O loop for começa com a inicialização var i = 0, onde i é a variável de controle do loop",
     popover2Text: 'A condição i < array.length é verificada antes de cada iteração do loop. Enquanto i for menor que o comprimento do array (array.length), o loop continuará',
     popover3Text: 'O incremento i++ é executado após cada iteração, aumentando o valor de i em 1.',
+
+
+    // card 3
+    title1: "Erros mais comuns",
+    title2: "Como corrigi-los",
+    textCardThree1: "Erro de Sintaxe, Uso Incorreto do Índice, Esquecer de Inicializar o Índice, Erro de Condição de Parada, Escopo de Variáveis, Modificação Inesperada do Array, Variáveis não Definidas",
+    textCardThree2: "Certifique-se de sempre incluir os parênteses que delimitam a condição do loop, Não inicializar a variável do índice resulta em comportamento imprevisível, verifique se a condição de parada é alcançável, Utilize let para garantir que a variável do índice esteja no escopo adequado, Defina todas as variáveis necessárias antes de usá-las dentro do loop",
 }
 export default stepsMissionThree

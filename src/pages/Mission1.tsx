@@ -8,7 +8,7 @@ import { Button } from '../../@/components/ui/button';
 
 const initialJavascriptCode = `const a = 12
 let b = "Juarez"
-console.log("Juarez tem 12 anos de {a}")`;
+console.log("{b} tem 12 anos de {a}")`;
 
 function Mission1() {
   const navigate = useNavigate();
@@ -25,13 +25,20 @@ function Mission1() {
   };
 
   const faseTwo = async () => {
+    const loadingToastId = toast.loading("Validando alterações");
     const isValid = AvaliateCode(code);
-    if (isValid) {
-      toast.success('Código correto! Avançando para a próxima fase.');
-      return navigate("/step/Mission2");
-    } else {
-      toast.error('Código incorreto. Corrija as variáveis.');
-    }
+    setTimeout(() => {
+      toast.dismiss(loadingToastId);
+      if (isValid) {
+        toast.success('Código correto! Avançando para a próxima fase.');
+        setTimeout(() => {
+          navigate("/step/Mission4");
+        }, 2000);
+      } else {
+        toast.error('Código incorreto. Corrija as variáveis.');
+      }
+    }, 2000)
+
   };
 
   return (
@@ -41,7 +48,6 @@ function Mission1() {
         <h1>Fase 1</h1>
       </div>
       <p className='text-lg'>Para avançar de fase e continuar salvando a empresa, é hora de corrigir o código vulnerável no código fonte da empresa, identifique os erros de declaração de variável e dê mais um passo rumo a vitória!</p>
-
       <p className='pt-4 text-green-600'>Dica: leia o console.log do código para melhorara a compreensão quanto as variáveis</p>
       <div className='px-12 flex justify-center'>
         <CodeMirror
