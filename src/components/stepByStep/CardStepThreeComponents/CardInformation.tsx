@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import Conteudo from "./Conteudo";
 import IconCard from "./IconCard";
 
@@ -17,16 +18,25 @@ const CardInformation = ({ left, textLeft, textRight, titleRight, titleLeft }: I
         return (
 
             <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-                <Conteudo title={titleLeft} text={textLeft} />
-                <IconCard  />
+                <Fade duration={1500} triggerOnce={true} direction="right">
+                    <Conteudo title={titleLeft} text={textLeft} />
+                </Fade>
+                <Fade duration={1500} triggerOnce={true} direction="right">
+
+                    <IconCard />
+                </Fade>
             </div>
         )
     }
 
     return (
         <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-            <IconCard />
-            <Conteudo title={titleRight} text={textRight} />
+            <Fade duration={1500} triggerOnce={true} direction="left">
+                <IconCard />
+            </Fade>
+            <Fade duration={1500} triggerOnce={true} direction="left">
+                <Conteudo title={titleRight} text={textRight} />
+            </Fade>
         </div>
     )
 }

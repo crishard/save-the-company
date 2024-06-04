@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 import { Button } from "../../../@/components/ui/button";
 import stepsMissionOne from "../../utils/stepsMissionOne";
@@ -33,20 +34,29 @@ const StepByStepMissionOne = () => {
         {steps[currentStep]}
       </div>
       <div className='flex justify-around'>
-        {currentStep > 0 && <Button className='bg-gray-600 text-gray-200 px-3 py-2 rounded-lg hover:bg-gray-400 hover:text-gray-700 transition ease-linear shadow-xl' variant="secondary" onClick={previousStep} disabled={currentStep === 0}>
-          Anterior
-        </Button>}
+        {currentStep > 0 &&
+          <Fade cascade direction="up" duration={1000} triggerOnce={true}>
+            <Button className='bg-gray-600 text-gray-200 px-3 py-2 rounded-lg hover:bg-gray-400 hover:text-gray-700 transition ease-linear shadow-xl' variant="secondary" onClick={previousStep} disabled={currentStep === 0}>
+              Anterior
+            </Button></Fade>}
+
 
         {currentStep < steps.length - 1 && (
-          <Button className='bg-gray-600 text-gray-200 px-3 py-2 rounded-lg hover:bg-gray-400 hover:text-gray-700 transition ease-linear shadow-xl' variant="secondary" onClick={nextStep} >
-            Próximo
-          </Button>
+          <Fade cascade direction="up" duration={1000} triggerOnce={true}>
+            <Button className='bg-gray-600 text-gray-200 px-3 py-2 rounded-lg hover:bg-gray-400 hover:text-gray-700 transition ease-linear shadow-xl' variant="secondary" onClick={nextStep} >
+              Próximo
+            </Button>
+          </Fade>
         )}
+
       </div>
       <div>
-        {currentStep >= steps.length - 1 && <Link to='/fase1'>
-          <Button className="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Ir para 1° Fase</Button>
-        </Link>}
+
+        {currentStep >= steps.length - 1 &&
+          <Fade cascade direction="up" duration={1000} triggerOnce={true}> <Link to='/fase1'>
+            <Button className="flex mx-auto mt-8 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Ir para 1° Fase</Button>
+          </Link> </Fade>}
+
       </div>
     </div>
   );
