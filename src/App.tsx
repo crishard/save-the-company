@@ -8,6 +8,7 @@ import Mission1 from "./pages/Mission1"
 import Mission2 from "./pages/Mission2"
 import Mission3 from "./pages/Mission3"
 import Mission4 from "./pages/Mission4"
+import Wining from "./pages/Wining"
 import "./styles/global.css"
 
 
@@ -18,6 +19,7 @@ function App() {
       <div className="bg-gray-200 h-svh">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/win" element={<Wining/>}/>
           <Route path="/step/mission1" element={<StepByStepMissionOne />} />
           <Route path="/fase1" element={<Mission1 />} />
           <Route path="/step/mission2" element={<StepByStepMissionTwo />} />

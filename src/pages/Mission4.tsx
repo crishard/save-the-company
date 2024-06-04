@@ -41,7 +41,7 @@ const Mission4 = () => {
       if (isValid) {
         toast.success('Código correto! Avançando para a próxima fase.');
         setTimeout(() => {
-          navigate("/");
+          navigate("/win");
         }, 2000);
       } else {
         toast.error('Código incorreto. Corrija a estrutura do while.');
