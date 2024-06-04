@@ -10,7 +10,7 @@ import { Button } from '../../@/components/ui/button';
 const initialJavascriptCode = `// Definindo um array
 const array = [1, 2, 3, 4, 5];
 
-// Usando um loop for com um erro na estrutura
+// Usando um loop for
 for let i = 0; i < array.length; i++ {
     console.log(array[i]);
 }

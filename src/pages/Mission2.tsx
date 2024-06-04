@@ -11,7 +11,7 @@ const initialJavascriptCode = `// Definindo duas variáveis
 const valor1 = 10;
 const valor2 = 20;
 
-// Verificando qual variável é maior com erro de sintaxe
+// Verificando qual variável é maior
 if (valor1 > valor2) {
     console.log("valor1 é maior que valor2");
 } else
