@@ -1,23 +1,17 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "../../../@/components/ui/button";
+import stepsMissionFour from '../../utils/stepsMissionFour';
 import { CardStepOne } from './CardStepOneComponents/CardStepOne';
 import { CardStepThree } from './CardStepThreeComponents/CardStepThree';
 import { CardStepTwo } from './CardSteptwoComponents/CardStepTwo';
 
 const steps = [
-    <CardStepOne title={'Operadores Lógicos 3: While'} textSubtitlePage={'HORA DE DAR SEGUIMENTO'} text1={'O operador for é usado para criar loops, permitindo a repetição de um bloco de código um número específico de vezes. A estrutura básica de um loop for em JavaScript contém: Inicialização, Condição e Incremento'} text2={'O loop for é frequentemente usado para iterar sobre elementos de arrays ou outras estruturas de dados iteráveis. Isso permite acessar e manipular cada elemento individualmente.'} text3={'O loop for oferece um controle preciso sobre a execução do loop, permitindo que você ajuste a inicialização, condição e incremento conforme necessário. Isso torna o for muito flexível para uma variedade de situações, como loops com passos variáveis, decrementos, ou iterações complexas.'} exemplo1={''} exemplo2={''} exemplo3={''} subtitle1={'Estrutura de Repetição'} subtitle2={'Iteração sobre Estruturas de Dados'} subtitle3={'Flexibilidade e Controle'} />,
+    <CardStepOne title={stepsMissionFour.title} textSubtitlePage={stepsMissionFour.textSubtitlePage} text1={stepsMissionFour.text1} text2={stepsMissionFour.text2} text3={stepsMissionFour.text3} exemplo1={stepsMissionFour.exemplo1} exemplo2={stepsMissionFour.exemplo2} exemplo3={stepsMissionFour.exemplo3} subtitle1={stepsMissionFour.subtitle1} subtitle2={stepsMissionFour.subtitle2} subtitle3={stepsMissionFour.subtitle3} />,
 
-    <CardStepTwo title={'Exemplo do uso em uma implementação real:'} text={`Explicação do Código abaixo: Um array chamado array é definido com os valores [1, 2, 3, 4, 5] O loop for começa com a inicialização var i = 0, onde i é a variável de controle do loop, A condição i < array.length é verificada antes de cada iteração do loop. Enquanto i for menor que o comprimento do array (array.length), o loop continuará, O incremento i++ é executado após cada iteração, aumentando o valor de i em 1.`} code={`// Definindo um array
-    var array = [1, 2, 3, 4, 5];
-    
-    // Usando um loop for para iterar sobre o array
-    for (var i = 0; i < array.length; i++) {
-        console.log(array[i]);
-    }
-    
-    `} saida={'ppaaoiehei'} text2={''} text3={''} popover1Text={''} popover2Text={''} popover3Text={''} />,
-    <CardStepThree textLeft={''} textRight={''} titleLeft={''} titleRight={''} />,
+    <CardStepTwo title={stepsMissionFour.titleCard2} text={stepsMissionFour.textCard2} code={stepsMissionFour.codigo} saida={stepsMissionFour.saida} text2={stepsMissionFour.text2Card2} text3={stepsMissionFour.text3Card2} popover1Text={stepsMissionFour.popover1Text} popover2Text={stepsMissionFour.popover2Text} popover3Text={stepsMissionFour.popover3Text} />,
+
+    <CardStepThree textLeft={stepsMissionFour.textCardThree1} textRight={stepsMissionFour.textCardThree2} titleLeft={stepsMissionFour.title1} titleRight={stepsMissionFour.title2} />,
 ];
 const StepByStepMissionFour = () => {
     const [currentStep, setCurrentStep] = useState(0);

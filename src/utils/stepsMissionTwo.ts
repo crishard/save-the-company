@@ -33,7 +33,7 @@ const stepsMissionTwo = {
 
 
     // card 3
-    textLeft: "Excesso de Condicionais Aninhadas, Condições Redundantes ou Desnecessárias, Complexidade Ciclomática Alta(com muitos if-else), Comparações Inadequadas, Ausência de Else Quando Necessário",
+    textLeft: "Excesso de condicionais aninhadas, condições redundantes ou desnecessárias, complexidade ciclomática alta(com muitos if-else), comparações inadequadas, ausência de else quando necessário",
     textRight: "Simplifique as condições e remova redundâncias, Divida a lógica em funções menores ou use padrões de design para gerenciar a complexidade, Use comparações estritas (=== e !==) para maior precisão, Certifique-se de cobrir todos os casos possíveis, especialmente quando há múltiplas condições, Certifique-se de cobrir todos os casos possíveis, especialmente quando há múltiplas condições.",
     titleLeft: "O que evitar",
     titleRight: "Como corrigir possíveis erros"

@@ -33,13 +33,19 @@ const Mission4 = () => {
   };
 
   const faseTwo = async () => {
-    const isValid = AvaliateCode(code);
-    if (isValid) {
-      toast.success('Código correto! Avançando para a próxima fase.');
-      return navigate("/");
-    } else {
-      toast.error('Código incorreto. Corrija a declaração do array e a estrutura do loop while.');
-    }
+    const loadingToastId = toast.loading("Validando alterações");
+        const isValid = AvaliateCode(code);
+        setTimeout(() => {
+            toast.dismiss(loadingToastId);
+            if (isValid) {
+                toast.success('Código correto! Avançando para a próxima fase.');
+                setTimeout(() => {
+                    navigate("/");
+                  }, 2000);
+            } else {
+                toast.error('Código incorreto. Corrija a estrutura do while.');
+            }
+        }, 2000)
   };
 
   return (
@@ -59,7 +65,7 @@ const Mission4 = () => {
         />
       </div>
       <div className='flex justify-center'>
-        <Button onClick={faseTwo} className='bg-indigo-600 rounded px-2 py-2 text-gray-800 hover:bg-indigo-400 hover:text-gray-100 transition ease-linear'>
+        <Button onClick={faseTwo} className=' px-3 py-3  transition ease-linear bg-indigo-500 rounded text-white font-semibold  hover:bg-slate-300 hover:text-gray-700 border-2 hover:border-gray-700'>
           Avaliar Mudanças
         </Button>
       </div>

@@ -40,8 +40,8 @@ const Mission2 = () => {
             if (isValid) {
                 toast.success('Código correto! Avançando para a próxima fase.');
                 setTimeout(() => {
-                    navigate("/step/Mission4");
-                  }, 2000);
+                    navigate("/step/Mission3");
+                }, 2000);
             } else {
                 toast.error('Código incorreto. Corrija a estrutura do if-else.');
             }
@@ -66,7 +66,7 @@ const Mission2 = () => {
                 />
             </div>
             <div className='flex justify-center'>
-                <Button onClick={faseTwo} className='bg-indigo-600 rounded px-2 py-2 text-gray-800 hover:bg-indigo-400 hover:text-gray-100 transition ease-linear'>
+                <Button onClick={faseTwo} className=' px-3 py-3  transition ease-linear bg-indigo-500 rounded text-white font-semibold  hover:bg-slate-300 hover:text-gray-700 border-2 hover:border-gray-700'>
                     Avaliar Mudanças
                 </Button>
             </div>

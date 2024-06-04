@@ -32,7 +32,7 @@ const stepsMissionThree = {
     // card 3
     title1: "Erros mais comuns",
     title2: "Como corrigi-los",
-    textCardThree1: "Erro de Sintaxe, Uso Incorreto do Índice, Esquecer de Inicializar o Índice, Erro de Condição de Parada, Escopo de Variáveis, Modificação Inesperada do Array, Variáveis não Definidas",
+    textCardThree1: "Erro de sintaxe, uso incorreto do índice, esquecer de inicializar o índice, erro de condição de parada, escopo de variáveis, modificação inesperada do array, variáveis não definidas",
     textCardThree2: "Certifique-se de sempre incluir os parênteses que delimitam a condição do loop, Não inicializar a variável do índice resulta em comportamento imprevisível, verifique se a condição de parada é alcançável, Utilize let para garantir que a variável do índice esteja no escopo adequado, Defina todas as variáveis necessárias antes de usá-las dentro do loop",
 }
 export default stepsMissionThree
